@@ -1,5 +1,5 @@
 using krakent_cryptus_user.domain.entities;
-using krakent_cryptus_user.domain.interfaces.datasources;
+using krakent_cryptus_user.domain.interfaces.infrastructure.datasources;
 using krakent_cryptus_user.infrastructure.database.context;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,22 +17,22 @@ namespace krakent_cryptus_user.infrastructure.database.datasources
 
         public Task<UserEntity?> GetUserById(int id)
         {
-            return _context.Users.FindAsync(id).AsTask();
+            return _context.Users.Include(x => x.UserRols!).ThenInclude(x => x.Rol).FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public Task<UserEntity?> GetUserByIdentification(string identification)
         {
-            return _context.Users.FirstOrDefaultAsync(x => x.Identification == identification);
+            return _context.Users.Include(x => x.UserRols!).ThenInclude(x => x.Rol).FirstOrDefaultAsync(x => x.Identification == identification);
         }
 
         public Task<UserEntity?> GetUserByMail(string mail)
         {
-            return _context.Users.FirstOrDefaultAsync(x => x.Mail == mail);
+            return _context.Users.Include(x => x.UserRols!).ThenInclude(x => x.Rol).FirstOrDefaultAsync(x => x.Email == mail);
         }
 
         public Task<UserEntity?> GetUserByUsername(string username)
         {
-            return _context.Users.FirstOrDefaultAsync(x => x.Username == username);
+            return _context.Users.Include(x => x.UserRols!).ThenInclude(x => x.Rol).FirstOrDefaultAsync(x => x.Username == username);
         }
 
         public async Task<UserEntity> UpdateUser(UserEntity user)
@@ -53,5 +53,6 @@ namespace krakent_cryptus_user.infrastructure.database.datasources
             }
             return user;
         }
+
     }
 }

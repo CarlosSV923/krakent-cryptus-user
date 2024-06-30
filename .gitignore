@@ -66,3 +66,6 @@ ScaffoldingReadMe.txt
 # Azure Web Apps settings
 .scm/
 .vs/
+
+#Migrations
+**/Migrations/*

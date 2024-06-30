@@ -1,4 +1,4 @@
-namespace krakent_cryptus_user.infrastructure.database.entities
+namespace krakent_cryptus_user.domain.entities
 {
     public class UserEntity
     {
@@ -8,7 +8,7 @@ namespace krakent_cryptus_user.infrastructure.database.entities
 
         public string? Lastnames { get; set; }
         public string? Username { get; set; }
-        public string? Mail { get; set; }
+        public string? Email { get; set; }
         public string? Password { get; set; }
 
         public string? Identification { get; set; }

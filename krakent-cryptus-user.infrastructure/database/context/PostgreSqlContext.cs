@@ -57,7 +57,7 @@ namespace krakent_cryptus_user.infrastructure.database.context
             .IsUnique();
 
             modelBuilder.Entity<UserEntity>()
-            .HasIndex(u => u.Mail)
+            .HasIndex(u => u.Email)
             .IsUnique();
 
             modelBuilder.Entity<UserEntity>()

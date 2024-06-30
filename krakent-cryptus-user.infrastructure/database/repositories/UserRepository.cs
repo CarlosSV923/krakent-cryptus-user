@@ -1,6 +1,6 @@
 using krakent_cryptus_user.domain.entities;
-using krakent_cryptus_user.domain.interfaces.datasources;
-using krakent_cryptus_user.domain.interfaces.repositories;
+using krakent_cryptus_user.domain.interfaces.infrastructure.datasources;
+using krakent_cryptus_user.domain.interfaces.infrastructure.repositories;
 
 namespace krakent_cryptus_user.infrastructure.database.repositories
 {

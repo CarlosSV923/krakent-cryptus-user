@@ -1,4 +1,4 @@
-namespace krakent_cryptus_user.infrastructure.database.entities
+namespace krakent_cryptus_user.domain.entities
 {
     public class RolEntity
     {

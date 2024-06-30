@@ -1,8 +1,8 @@
 using krakent_cryptus_user.domain.entities;
 
-namespace krakent_cryptus_user.domain.interfaces.repositories
+namespace krakent_cryptus_user.domain.interfaces.infrastructure.datasources
 {
-    public interface IUserRepository
+    public interface IUserDatasource
     {
         Task<UserEntity> CreateUser(UserEntity user);
         Task<UserEntity?> GetUserById(int id);
@@ -10,6 +10,6 @@ namespace krakent_cryptus_user.domain.interfaces.repositories
         Task<UserEntity?> GetUserByMail(string mail);
         Task<UserEntity?> GetUserByUsername(string username);
         Task<UserEntity> UpdateUser(UserEntity user);
-        Task<UserEntity?> DeleteUser(int id);
+        Task<UserEntity?> DeleteUser(int id);       
     }
 }
