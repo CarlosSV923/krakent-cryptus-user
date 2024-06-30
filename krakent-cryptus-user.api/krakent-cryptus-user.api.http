@@ -1,0 +1,6 @@
+@krakent_cryptus_user.api_HostAddress = http://localhost:5215
+
+GET {{krakent_cryptus_user.api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "krakent-cryptus-user.api", "krakent-cryptus-user.api\krakent-cryptus-user.api.csproj", "{08B5DB73-86FE-46FB-8491-BCDD396AEB34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "krakent-cryptus-user.domain", "krakent-cryptus-user.domain\krakent-cryptus-user.domain.csproj", "{7E04F226-DFA5-478A-AEB8-BA430B42DFD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "krakent-cryptus-user.application", "krakent-cryptus-user.application\krakent-cryptus-user.application.csproj", "{736F7426-C7AF-4A82-A71C-93898C214CCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "krakent-cryptus-user.infrastructure", "krakent-cryptus-user.infrastructure\krakent-cryptus-user.infrastructure.csproj", "{4F6B0C43-BAF9-4E1A-B497-0EC2CB49E8A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08B5DB73-86FE-46FB-8491-BCDD396AEB34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08B5DB73-86FE-46FB-8491-BCDD396AEB34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08B5DB73-86FE-46FB-8491-BCDD396AEB34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08B5DB73-86FE-46FB-8491-BCDD396AEB34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E04F226-DFA5-478A-AEB8-BA430B42DFD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E04F226-DFA5-478A-AEB8-BA430B42DFD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E04F226-DFA5-478A-AEB8-BA430B42DFD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E04F226-DFA5-478A-AEB8-BA430B42DFD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{736F7426-C7AF-4A82-A71C-93898C214CCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{736F7426-C7AF-4A82-A71C-93898C214CCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{736F7426-C7AF-4A82-A71C-93898C214CCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{736F7426-C7AF-4A82-A71C-93898C214CCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F6B0C43-BAF9-4E1A-B497-0EC2CB49E8A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F6B0C43-BAF9-4E1A-B497-0EC2CB49E8A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F6B0C43-BAF9-4E1A-B497-0EC2CB49E8A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F6B0C43-BAF9-4E1A-B497-0EC2CB49E8A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4CB4224-05AE-4321-BBB8-33E6C37C36E5}
+	EndGlobalSection
+EndGlobal
